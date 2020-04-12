@@ -1,0 +1,59 @@
+.block4 {
+  margin-top: 192px;
+  padding-bottom: 80px;
+  background: url(../../../images/bloc4/background.png) no-repeat 0 310px;
+
+  &__content {
+    .block-title {
+      max-width: 719px;
+      width: 100%;
+      margin: 0 auto;
+    }
+  }
+
+  &__benefits-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 128px;
+  }
+
+  &__benefits-item {
+    width: 438px;
+
+    .business-card {
+      margin-bottom: 64px;
+    }
+
+    .benefit-title,
+    .benefit-text {
+      margin-bottom: 32px;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .block4 {
+    &__benefits-item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: auto;
+
+      .business-card {
+        max-width: 438px;
+        width: 100%;
+      }
+
+      &:not(:last-child) {
+        margin-bottom: 128px;
+      }
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  .block4 {
+    margin-top: 50px;
+  }
+}

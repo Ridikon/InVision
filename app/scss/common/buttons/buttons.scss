@@ -1,0 +1,32 @@
+.btn {
+  padding: 17px 32px;
+  border-radius: 28px;
+  background-color: $green;
+  border: none;
+  color: $white;
+  font-size: 16px;
+  font-weight: $font-weight-bold;
+  cursor: pointer;
+  box-shadow: 0 2px 4px 0 rgba(57, 74, 84, 0.8);
+
+  &:hover {
+    box-shadow: none;
+    color: $base-color;
+  }
+
+  &.btn-small {
+    padding: 7px 30px;
+  }
+
+  &.btn-large {
+    padding: 17px 103px;
+  }
+}
+
+@media (max-width: 480px) {
+  .btn {
+    &.btn-large {
+      padding: 17px 32px;
+    }
+  }
+}
